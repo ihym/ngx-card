@@ -1,0 +1,77 @@
+<main>
+  <article class="slds-card">
+    <div class="slds-card__header">
+      <header class="slds-grid slds-media slds-media_center slds-has-flexi-truncate slds-text-align_center">
+        <div class="slds-media__body">
+          <h2>
+            <div class="slds-card__header-link slds-truncate">
+              <span class="slds-text-heading_small">ngx-card</span>
+            </div>
+          </h2>
+        </div>
+      </header>
+      <div class="slds-text-align_center slds-m-bottom--small">
+        Angular 2+ wrapper for <a href="https://github.com/jessepollak/card">card.js</a>
+      </div>
+    </div>
+    <div class="slds-card__body slds-card__body_inner">
+      <div class="demo-container slds-border_top slds-border_bottom">
+        <div class="card-wrapper"></div>
+        <div class="form-container">
+          <form class="slds-form slds-form_compound" card container=".card-wrapper">
+            <fieldset class="slds-form-element">
+              <div class="slds-form-element__group">
+                <div class="slds-form-element__row">
+                  <div class="slds-form-element">
+                    <input type="text" name="number" placeholder="Card number" class="slds-input" card-number/>
+                  </div>
+                </div>
+                <div class="slds-form-element__row">
+                  <div class=" slds-size_1-of-2">
+                    <div class="slds-form-element">
+                      <input type="text" name="first-name" placeholder="First name" class="slds-input" card-name/>
+                    </div>
+                  </div>
+                  <div class=" slds-size_1-of-2">
+                    <div class="slds-form-element">
+                      <input type="text" name="last-name" placeholder="Last name" class="slds-input" card-name/>
+                    </div>
+                  </div>
+                </div>
+                <div class="slds-form-element__row">
+                  <div class=" slds-size_1-of-2">
+                    <div class="slds-form-element">
+                      <input type="text" name="expiry" placeholder="MM/YY" class="slds-input" card-expiry/>
+                    </div>
+                  </div>
+                  <div class=" slds-size_1-of-2">
+                    <div class="slds-form-element">
+                      <input type="text" name="cvc" placeholder="CVC" class="slds-input" card-cvc/>
+                    </div>
+                  </div>
+                </div>
+                <div class="slds-form-element__row">
+                  <input type="submit" value="Submit" class="slds-size_1-of-1 slds-button slds-button--brand">
+                </div>
+              </div>
+            </fieldset>
+          </form>
+        </div>
+      </div>
+    </div>
+    
+    <footer class="slds-card__footer">
+      <div class="slds-grid slds-grid_align-center">
+        <div class="slds-col slds-align-middle slds-no-flex">
+          <a href="https://www.npmjs.com/package/ngx-card" alt="NPM" title="Install with NPM">
+            <img src="img/npm.svg" style="height:15px; background:transparent;"/>
+          </a>
+          <a href="https://github.com/ihym/ngx-card" alt="Source" title="View Source" class="slds-m-left--small">
+            <img src="img/octicon.png" style="height:20px; background:transparent;"/>
+          </a>
+        </div>
+      </div>
+    </footer>
+  </article>
+</main>
+

@@ -1,0 +1,47 @@
+app {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  background: #f6f7f9;
+}
+
+main {
+  flex: 1 0 auto;
+}
+
+.slds-card {
+  position: fixed;
+  padding: 0;
+  z-index: 10000;
+  border-radius: 0;
+  background: #fff;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.slds-card__body {
+  padding-left: 0;
+  padding-right: 0; 
+}
+
+.demo-container {
+    background: #EEE;
+    position: relative;
+    padding: 30px;
+}
+
+.form-container {
+    width: 350px;
+    margin-top: 40px;
+}
+
+.slds-input, .slds-button {
+  border-radius: 0;
+}
+
+.slds-input:focus, .slds-input:active {
+  border-color: none;
+  background-color: none;
+  box-shadow: none;
+}
