@@ -4,7 +4,7 @@
 [![Dependencies](https://david-dm.org/ihym/ngx-card.svg)](https://david-dm.org/ihym/ngx-card)
 [![Codacy Badge](https://api.codacy.com/project/badge/Grade/6ff9f19109dc4c9ba18eb8cd893d67d7)](https://www.codacy.com/app/ihym/ngx-card?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=ihym/ngx-card&amp;utm_campaign=Badge_Grade)
 
-Angular 2+ wrapper for [card.js](https://github.com/camwiegert/card)
+Angular 2+ wrapper for [card.js](https://github.com/jessepollak/card)
 
 [https://ihym.github.io/ngx-card/](https://ihym.github.io/ngx-card/)
 
