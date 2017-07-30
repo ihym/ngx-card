@@ -6,6 +6,10 @@
 
 Angular 2+ wrapper for [card.js](https://github.com/jessepollak/card)
 
+
+![card](http://i.imgur.com/qG3TenO.gif)
+
+
 [https://ihym.github.io/ngx-card/](https://ihym.github.io/ngx-card/)
 
 ## Installation
@@ -58,10 +62,12 @@ export class AppModule {}
 
 
 Modify slightly your form by adding the correct directives in your input elements.
+
 You can have multiple inputs that render to a single field (i.e. you have a first and last name input).
+
 To use ngx-card with this functionality, just rearrange your input elements in the correct order and add the proper directives. For example,
 ```javascript
-<form ngx-card
+<form card
   container=".card-container"
   [card-width]="500"
   [messages]="messages"
