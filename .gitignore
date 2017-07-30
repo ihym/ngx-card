@@ -1,0 +1,21 @@
+### Build generated
+/demo/dist
+/demo/**/*.ngfactory.ts
+/demo/**/*.ngsummary.json
+/temp/
+/coverage/
+/docs/
+
+### Package manager generated
+node_modules
+
+### Logs
+*.log
+
+### OS/IDE generated files
+Thumbs.db
+.DS_Store
+.vscode
+.idea
+*.iml
+*.typingsrc
