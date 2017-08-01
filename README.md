@@ -21,7 +21,7 @@ Install through `npm`:
 npm install --save ngx-card
 ```
 
-If you use **SystemJS** to load your files, you should adjust your configuration to point our UMD bundle through [unpkg](https://unpkg.com/)
+If you use **SystemJS** to load your files, you should adjust your configuration to point our UMD bundle:
 
 ```javascript
 map: {
@@ -32,7 +32,7 @@ map: {
 
 #### Dependencies
 This library depends on [https://github.com/jessepollak/card](https://github.com/jessepollak/card) (tested with 2.3.0).
-We don't ship with the library, but you have to take care of including it in your page. There are various ways to achieve this, for example by adding this at the end of your <body>:
+We don't ship with the library, but you have to take care of including it in your page. There are various ways to achieve this, for example by adding this at the end of your `<body>`:
 
 ```html
 <script src="https://unpkg.com/card@2.3.0/dist/card.js">
@@ -64,7 +64,7 @@ We don't ship with the library, but you have to take care of including it in you
 
 
 ## Usage
-Once installed you need to import our main module into your module. You should end up with code similar to this:
+Once installed you need to import our main module into yours. You should end up with code similar to this:
 
 ```javascript
 import {MyComponent} from '...';
@@ -73,7 +73,6 @@ import {CardModule} from 'ngx-card/ngx-card';
 @NgModule({
   imports: [..., CardModule],
   declarations: [MyComponent, ...],
-  bootstrap: [MyComponent],
 })
 export class MyModule {}
 ```
