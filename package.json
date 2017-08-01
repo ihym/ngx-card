@@ -29,9 +29,6 @@
   ],
   "author": "Vasilis Diakomanolis <b.diakomanolis@gmail.com>",
   "license": "MIT",
-  "dependencies": {
-    "card": "^2.3.0"
-  },
   "peerDependencies": {
     "@angular/core": ">=2.0.0"
   },

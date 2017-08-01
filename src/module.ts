@@ -1,14 +1,14 @@
 import {NgModule} from '@angular/core';
 
-import {CardNumberTemplate, CardNameTemplate, CardExpiryTemplate, CardCvcTemplate} from './inputs';
-import {Card} from './card';
+import {NgxCardNumberTemplate, NgxCardNameTemplate, NgxCardExpiryTemplate, NgxCardCvcTemplate} from './inputs';
+import {NgxCard} from './card';
 
 const CARD_DIRECTIVES = [
-	Card,
-  CardNumberTemplate,
-	CardNameTemplate,
-	CardExpiryTemplate,
-	CardCvcTemplate,
+	NgxCard,
+	NgxCardNumberTemplate,
+	NgxCardNameTemplate,
+	NgxCardExpiryTemplate,
+	NgxCardCvcTemplate,
 ];
 
 @NgModule({

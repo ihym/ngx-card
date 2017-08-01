@@ -1,7 +1,7 @@
 import {Directive, Input, ContentChildren, QueryList, ElementRef} from '@angular/core';
-import {CardNumberTemplate, CardNameTemplate, CardExpiryTemplate, CardCvcTemplate} from './inputs';
+import {NgxCardNumberTemplate, NgxCardNameTemplate, NgxCardExpiryTemplate, NgxCardCvcTemplate} from './inputs';
 
-var card = require('card');
+declare var Card;
 
 const defaultPlaceholders = {
 	number: '•••• •••• •••• ••••',
@@ -18,7 +18,7 @@ const defaultMessages = {
 @Directive({
   selector: '[card]',
 })
-export class Card {
+export class NgxCard {
 
 	// a selector or DOM element for the container
 	// where you want the card to appear
@@ -51,15 +51,15 @@ export class Card {
 	// if true, will log helpful messages for setting up Card
 	@Input() debug: boolean = false; // optional - default false
 
-  @ContentChildren(CardNumberTemplate) numbers: QueryList<CardNumberTemplate>;
-  @ContentChildren(CardNameTemplate) names: QueryList<CardNameTemplate>;
-  @ContentChildren(CardExpiryTemplate) expiries: QueryList<CardExpiryTemplate>;
-  @ContentChildren(CardCvcTemplate) cvcs: QueryList<CardCvcTemplate>;
+  @ContentChildren(NgxCardNumberTemplate) numbers: QueryList<NgxCardNumberTemplate>;
+  @ContentChildren(NgxCardNameTemplate) names: QueryList<NgxCardNameTemplate>;
+  @ContentChildren(NgxCardExpiryTemplate) expiries: QueryList<NgxCardExpiryTemplate>;
+  @ContentChildren(NgxCardCvcTemplate) cvcs: QueryList<NgxCardCvcTemplate>;
 
   constructor(private element: ElementRef) {}
 
 	ngAfterViewInit() {
-		new card({
+		new Card({
 			form: this.element.nativeElement,
 			container: this.container,
 			width: this.width,
@@ -80,24 +80,6 @@ export class Card {
 	findSelectors(list: QueryList<any>): string {
 		return list.map(template => template.elementRef.nativeElement.tagName.toLowerCase() + '[name="' + template.name + '"]')
 							 .join(', ');
-	}
-
-	createCard() {
-		return new card({
-			form: this.element.nativeElement,
-			container: this.container,
-			formSelectors: {
-				numberInput: this.findSelectors(this.numbers),
-				expiryInput: this.findSelectors(this.expiries),
-				cvcInput: this.findSelectors(this.cvcs),
-				nameInput: this.findSelectors(this.names),
-			},
-			formatting: this.formatting,
-			messages: this.messages,
-			placeholders: this.placeholders,
-			masks: this.masks,
-			debug: this.debug,
-		});
 	}
 
 };

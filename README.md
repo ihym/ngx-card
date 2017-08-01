@@ -30,6 +30,14 @@ map: {
 }
 ```
 
+#### Dependencies
+This library depends on [https://github.com/jessepollak/card](https://github.com/jessepollak/card) (tested with 2.3.0).
+We don't ship with the library, but you have to take care of including it in your page. There are various ways to achieve this, for example by adding this at the end of your <body>:
+
+```html
+<script src="https://unpkg.com/card@2.3.0/dist/card.js">
+```
+
 
 ## API
 ### [card]

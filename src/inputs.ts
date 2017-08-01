@@ -7,7 +7,7 @@ import {uniqueId} from './util';
     '[name]': 'name',
   },
 })
-export class CardNumberTemplate {
+export class NgxCardNumberTemplate {
   constructor(public elementRef: ElementRef,
 							@Attribute('name') public name: string) {}
 
@@ -22,7 +22,7 @@ export class CardNumberTemplate {
     '[name]': 'name',
   },
 })
-export class CardNameTemplate {
+export class NgxCardNameTemplate {
   constructor(public elementRef: ElementRef,
 							@Attribute('name') public name: string) {}
 
@@ -37,7 +37,7 @@ export class CardNameTemplate {
     '[name]': 'name',
   },
 })
-export class CardExpiryTemplate {
+export class NgxCardExpiryTemplate {
   constructor(public elementRef: ElementRef,
 							@Attribute('name') public name: string) {}
 
@@ -52,7 +52,7 @@ export class CardExpiryTemplate {
     '[name]': 'name',
   },
 })
-export class CardCvcTemplate {
+export class NgxCardCvcTemplate {
   constructor(public elementRef: ElementRef,
 							@Attribute('name') public name: string) {}
 
