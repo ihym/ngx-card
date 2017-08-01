@@ -26,7 +26,7 @@ If you use **SystemJS** to load your files, you should adjust your configuration
 ```javascript
 map: {
   ...
-  'ngx-card/ngx-card': 'https://unpkg.com/ngx-card@x.x.x/bundles/ngx-card.umd.js'
+  'ngx-card/ngx-card': 'node_modules/ngx-card/bundles/ngx-card.umd.js'
 }
 ```
 
