@@ -45,3 +45,7 @@ main {
   background-color: none;
   box-shadow: none;
 }
+
+a {
+  text-decoration:none;
+}
