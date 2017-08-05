@@ -3,13 +3,12 @@ import {uniqueId} from './util';
 
 @Directive({
 	selector: '[card-number]',
-  host: {
-    '[name]': 'name',
-  },
+	host: {
+		'[name]': 'name',
+	},
 })
 export class NgxCardNumberTemplate {
-  constructor(public elementRef: ElementRef,
-							@Attribute('name') public name: string) {}
+	constructor(public elementRef: ElementRef, @Attribute('name') public name: string) {}
 
 	ngOnInit() {
 		this.name = this.name || uniqueId('name');
@@ -18,13 +17,12 @@ export class NgxCardNumberTemplate {
 
 @Directive({
 	selector: '[card-name]',
-  host: {
-    '[name]': 'name',
-  },
+	host: {
+		'[name]': 'name',
+	},
 })
 export class NgxCardNameTemplate {
-  constructor(public elementRef: ElementRef,
-							@Attribute('name') public name: string) {}
+	constructor(public elementRef: ElementRef, @Attribute('name') public name: string) {}
 
 	ngOnInit() {
 		this.name = this.name || uniqueId('name');
@@ -33,13 +31,12 @@ export class NgxCardNameTemplate {
 
 @Directive({
 	selector: '[card-expiry]',
-  host: {
-    '[name]': 'name',
-  },
+	host: {
+		'[name]': 'name',
+	},
 })
 export class NgxCardExpiryTemplate {
-  constructor(public elementRef: ElementRef,
-							@Attribute('name') public name: string) {}
+	constructor(public elementRef: ElementRef, @Attribute('name') public name: string) {}
 
 	ngOnInit() {
 		this.name = this.name || uniqueId('expiry');
@@ -48,13 +45,12 @@ export class NgxCardExpiryTemplate {
 
 @Directive({
 	selector: '[card-cvc]',
-  host: {
-    '[name]': 'name',
-  },
+	host: {
+		'[name]': 'name',
+	},
 })
 export class NgxCardCvcTemplate {
-  constructor(public elementRef: ElementRef,
-							@Attribute('name') public name: string) {}
+	constructor(public elementRef: ElementRef, @Attribute('name') public name: string) {}
 
 	ngOnInit() {
 		this.name = this.name || uniqueId('cvc');

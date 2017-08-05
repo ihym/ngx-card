@@ -51,12 +51,12 @@ export class NgxCard {
 	// if true, will log helpful messages for setting up Card
 	@Input() debug: boolean = false; // optional - default false
 
-  @ContentChildren(NgxCardNumberTemplate) numbers: QueryList<NgxCardNumberTemplate>;
-  @ContentChildren(NgxCardNameTemplate) names: QueryList<NgxCardNameTemplate>;
-  @ContentChildren(NgxCardExpiryTemplate) expiries: QueryList<NgxCardExpiryTemplate>;
-  @ContentChildren(NgxCardCvcTemplate) cvcs: QueryList<NgxCardCvcTemplate>;
+	@ContentChildren(NgxCardNumberTemplate) numbers: QueryList<NgxCardNumberTemplate>;
+	@ContentChildren(NgxCardNameTemplate) names: QueryList<NgxCardNameTemplate>;
+	@ContentChildren(NgxCardExpiryTemplate) expiries: QueryList<NgxCardExpiryTemplate>;
+	@ContentChildren(NgxCardCvcTemplate) cvcs: QueryList<NgxCardCvcTemplate>;
 
-  constructor(private element: ElementRef) {}
+	constructor(private element: ElementRef) {}
 
 	ngAfterViewInit() {
 		new Card({
@@ -79,7 +79,7 @@ export class NgxCard {
 
 	findSelectors(list: QueryList<any>): string {
 		return list.map(template => template.elementRef.nativeElement.tagName.toLowerCase() + '[name="' + template.name + '"]')
-							 .join(', ');
+				   .join(', ');
 	}
 
 };
