@@ -1,3 +1,8 @@
+<a name="0.2.4"></a>
+## [0.2.4](https://github.com/ihym/ngx-card/compare/v0.2.3...v0.2.4) (2017-08-22)
+
+
+
 <a name="0.2.3"></a>
 ## [0.2.3](https://github.com/ihym/ngx-card/compare/v0.2.2...v0.2.3) (2017-08-22)
 
