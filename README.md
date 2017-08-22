@@ -85,7 +85,7 @@ To use ngx-card with this functionality, just rearrange your form elements in th
 ```javascript
 <form card
   container=".card-container"
-  [card-width]="500"
+  card-width="500"
   [messages]="messages"
   [placeholders]="placeholders"
   [masks]="masks"
