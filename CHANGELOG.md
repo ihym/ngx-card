@@ -1,3 +1,13 @@
+<a name="0.2.3"></a>
+## [0.2.3](https://github.com/ihym/ngx-card/compare/v0.2.2...v0.2.3) (2017-08-22)
+
+
+### Bug Fixes
+
+* **app:** search for ContentChildren in descendants too ([1c78bd1](https://github.com/ihym/ngx-card/commit/1c78bd1)), closes [#1](https://github.com/ihym/ngx-card/issues/1)
+
+
+
 <a name="0.2.2"></a>
 ## [0.2.2](https://github.com/ihym/ngx-card/compare/v0.2.1...v0.2.2) (2017-08-12)
 
