@@ -51,10 +51,10 @@ export class NgxCard {
 	// if true, will log helpful messages for setting up Card
 	@Input() debug: boolean = false; // optional - default false
 
-	@ContentChildren(NgxCardNumberTemplate) numbers: QueryList<NgxCardNumberTemplate>;
-	@ContentChildren(NgxCardNameTemplate) names: QueryList<NgxCardNameTemplate>;
-	@ContentChildren(NgxCardExpiryTemplate) expiries: QueryList<NgxCardExpiryTemplate>;
-	@ContentChildren(NgxCardCvcTemplate) cvcs: QueryList<NgxCardCvcTemplate>;
+	@ContentChildren(NgxCardNumberTemplate,  {descendants: true}) numbers: QueryList<NgxCardNumberTemplate>;
+	@ContentChildren(NgxCardNameTemplate,  {descendants: true}) names: QueryList<NgxCardNameTemplate>;
+	@ContentChildren(NgxCardExpiryTemplate,  {descendants: true}) expiries: QueryList<NgxCardExpiryTemplate>;
+	@ContentChildren(NgxCardCvcTemplate,  {descendants: true}) cvcs: QueryList<NgxCardCvcTemplate>;
 
 	constructor(private element: ElementRef) {}
 

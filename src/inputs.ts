@@ -11,7 +11,7 @@ export class NgxCardNumberTemplate {
 	constructor(public elementRef: ElementRef, @Attribute('name') public name: string) {}
 
 	ngOnInit() {
-		this.name = this.name || uniqueId('name');
+		this.name = this.name || uniqueId('number');
 	}
 }
 
