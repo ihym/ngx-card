@@ -1,5 +1,4 @@
-# ngx-card [![npm version](https://badge.fury.io/js/ngx-card.svg)](https://www.npmjs.com/package/ngx-card) [![License: MIT](https://img.shields.io/badge/License-MIT-brightgreen.svg)](https://opensource.org/licenses/MIT) 
-
+# ngx-card [![npm version](https://badge.fury.io/js/ngx-card.svg)](https://www.npmjs.com/package/ngx-card)  [![npm](https://img.shields.io/npm/dm/ngx-card.svg?maxAge=2592000)](https://www.npmjs.com/package/ngx-card) [![License: MIT](https://img.shields.io/badge/License-MIT-brightgreen.svg)](https://opensource.org/licenses/MIT)
 
 [![Build Status](https://travis-ci.org/ihym/ngx-card.svg?branch=master)](https://travis-ci.org/ihym/ngx-card)
 [![Codacy Badge](https://api.codacy.com/project/badge/Grade/6ff9f19109dc4c9ba18eb8cd893d67d7)](https://www.codacy.com/app/ihym/ngx-card?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=ihym/ngx-card&amp;utm_campaign=Badge_Grade)
