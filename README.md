@@ -82,6 +82,7 @@ You can have multiple form elements that render to a single field (i.e. you have
 
 To use ngx-card with this functionality, just rearrange your form elements in the correct order and add the proper directives. For example,
 ```javascript
+<div class="card-container"></div>
 <form card
   container=".card-container"
   card-width="500"
