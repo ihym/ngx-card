@@ -1,5 +1,5 @@
-import {Directive, Input, ContentChildren, QueryList, ElementRef} from '@angular/core';
-import {NgxCardNumberTemplate, NgxCardNameTemplate, NgxCardExpiryTemplate, NgxCardCvcTemplate} from './inputs';
+import { Directive, Input, ContentChildren, QueryList, ElementRef } from '@angular/core';
+import { NgxCardNumberTemplate, NgxCardNameTemplate, NgxCardExpiryTemplate, NgxCardCvcTemplate } from './inputs';
 
 declare var Card;
 
@@ -16,7 +16,7 @@ const defaultMessages = {
 };
 
 @Directive({
-  selector: '[card]',
+  selector: '[card]'
 })
 export class NgxCard {
 
@@ -59,15 +59,17 @@ export class NgxCard {
 	constructor(private element: ElementRef) {}
 
 	ngAfterViewInit() {
+		console.log("NgxCardIonicDirective::ngAfterViewInit()");
+		console.dir(this.element);
 		new Card({
 			form: this.element.nativeElement,
 			container: this.container,
 			width: this.width,
 			formSelectors: {
-				numberInput: this.findSelectors(this.numbers),
-				expiryInput: this.findSelectors(this.expiries),
-				cvcInput: this.findSelectors(this.cvcs),
-				nameInput: this.findSelectors(this.names),
+				numberInput: this.findInputSelectors(this.numbers),
+				expiryInput: this.findInputSelectors(this.expiries),
+				cvcInput: this.findInputSelectors(this.cvcs),
+				nameInput: this.findInputSelectors(this.names),
 			},
 			formatting: this.formatting,
 			messages: this.messages,
@@ -76,10 +78,13 @@ export class NgxCard {
 			debug: this.debug,
 		});
 	}
-
+/*
 	findSelectors(list: QueryList<any>): string {
-		return list.map(template => template.elementRef.nativeElement.tagName.toLowerCase() + '[name="' + template.name + '"]')
-				   .join(', ');
+		return list.map(template => template.elementRef.nativeElement.tagName.toLowerCase() + '[name="' + template.name + '"]').join(', ');
+	}
+*/
+	findInputSelectors(list: QueryList<any>): string {
+		return list.map(template => `input[name="${template.name}"]`).join(', ');
 	}
 
 };
