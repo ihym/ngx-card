@@ -1,6 +1,13 @@
 import {Directive, ElementRef, Attribute} from '@angular/core';
 import {uniqueId} from './util';
+// import {uniqueId} from './util';
 
+const uniqueId = (function() {
+	let idCounter = 0;
+	return function(prefix = 'uid') {
+	  return `card_${prefix}_${++idCounter}`;
+	};
+}());
 @Directive({
 	selector: '[card-number]',
 	host: {
